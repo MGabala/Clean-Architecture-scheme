@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArchitectureApplication.Contracts.Persistance
+namespace CleanArchitectureApplication.Repositories.Persistance
 {
     public interface IAsyncRepository<T> where T: class
     {
