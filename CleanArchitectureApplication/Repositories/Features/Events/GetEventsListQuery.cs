@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using MediatR;
+
 namespace CleanArchitectureApplication.Repositories.Features.Events
 {
-    internal class GetEventsListQuery
+    public class GetEventsListQuery : IRequest<List<EventListVm>>
     {
+        
     }
 }
