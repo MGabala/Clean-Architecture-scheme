@@ -17,6 +17,8 @@ namespace CleanArchitectureApplication.Profiles
         public MappingProfile()
         {
             CreateMap<EventEntity, EventListVM>().ReverseMap();
+            CreateMap<EventEntity, EventDetailVM>().ReverseMap();
+            CreateMap<CategoryEntity, CategoryDTO>();
         }
     }
 }
