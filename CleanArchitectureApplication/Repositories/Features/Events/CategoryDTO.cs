@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using MediatR;
-
 namespace CleanArchitectureApplication.Repositories.Features.Events
 {
-    public class GetEventsListQuery : IRequest<List<EventListVM>>
+    public class CategoryDTO
     {
-        
+        public Guid Id { get; set; }
+        public string Name { get; set; } = string.Empty;
     }
 }

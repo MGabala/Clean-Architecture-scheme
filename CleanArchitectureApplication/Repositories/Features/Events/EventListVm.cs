@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchitectureApplication.Repositories.Features.Events
 {
-    public class EventListVm
+    public class EventListVM
     {
         public Guid EventId { get; set; }
         public string Name { get; set; }

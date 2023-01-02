@@ -8,8 +8,9 @@ using MediatR;
 
 namespace CleanArchitectureApplication.Repositories.Features.Events
 {
-    public class GetEventsListQuery : IRequest<List<EventListVM>>
+    public class GetEventDetailQuery : IRequest<EventDetailVM>
     {
-        
+        public Guid Id { get; set; }
     }
+
 }
