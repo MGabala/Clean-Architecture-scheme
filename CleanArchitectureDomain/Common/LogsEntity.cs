@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CleanArchitectureDomain.Common
 {
-    internal class LogsEntity
+    public class LogsEntity
     {
+        public string? CreatedBy { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public string? ModifiedBy { get; set; }
+        public DateTime ModifiedDate { get; set; }
     }
 }
