@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArchitectureApplication.Repositories.Features.Events
+namespace CleanArchitectureApplication.Repositories.Features.Events.Queries
 {
     public class CategoryDTO
     {

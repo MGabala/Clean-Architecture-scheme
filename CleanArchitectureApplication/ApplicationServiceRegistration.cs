@@ -18,4 +18,4 @@ namespace CleanArchitectureApplication
             return services;
         }
     }
-}
+} 

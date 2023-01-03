@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using AutoMapper;
-
-using CleanArchitectureApplication.Repositories.Features.Events;
+using CleanArchitectureApplication.Repositories.Features.Events.GetEventDetail;
 using CleanArchitectureApplication.Repositories.Features.Events.Queries;
 using CleanArchitectureDomain.Entities;
 
