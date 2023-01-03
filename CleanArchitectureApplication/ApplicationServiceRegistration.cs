@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using MediatR;
-
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanArchitectureApplication
@@ -16,7 +14,7 @@ namespace CleanArchitectureApplication
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
-
+            
             return services;
         }
     }

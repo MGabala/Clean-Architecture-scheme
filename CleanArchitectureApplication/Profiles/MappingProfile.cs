@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 
 using CleanArchitectureApplication.Repositories.Features.Events;
-
+using CleanArchitectureApplication.Repositories.Features.Events.Queries;
 using CleanArchitectureDomain.Entities;
 
 namespace CleanArchitectureApplication.Profiles

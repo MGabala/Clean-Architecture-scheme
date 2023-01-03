@@ -11,7 +11,7 @@ using CleanArchitectureDomain.Entities;
 
 using MediatR;
 
-namespace CleanArchitectureApplication.Repositories.Features.Events
+namespace CleanArchitectureApplication.Repositories.Features.Events.Queries
 {
     public class GetEventDetailQueryHandler : IRequestHandler<GetEventDetailQuery, EventDetailVM>
     {
@@ -35,7 +35,7 @@ namespace CleanArchitectureApplication.Repositories.Features.Events
 
             if (category == null)
             {
-               // throw new NotFoundException(nameof(EventEntity), request.Id);
+                // throw new NotFoundException(nameof(EventEntity), request.Id);
                 throw new ArgumentNullException(nameof(EventEntity));
             }
             eventDetailDto.Category = _mapper.Map<CategoryDTO>(category);

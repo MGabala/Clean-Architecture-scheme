@@ -5,12 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 using AutoMapper;
-
 using CleanArchitectureApplication.Repositories.Persistance;
 using CleanArchitectureDomain.Entities;
 using MediatR;
 
-namespace CleanArchitectureApplication.Repositories.Features.Events
+namespace CleanArchitectureApplication.Repositories.Features.Events.GetEventDetail
 {
     public class GetEventsListQueryHandler : IRequestHandler<GetEventsListQuery, List<EventListVM>>
     {
