@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using MediatR;
 
-namespace CleanArchitectureApplication.Repositories.Features.Categories.Commands.CreateEvent
+namespace CleanArchitectureApplication.Repositories.Features.Events.Commands.CreateEvent
 {
     public class CreateEventCommand : IRequest<Guid>
     {

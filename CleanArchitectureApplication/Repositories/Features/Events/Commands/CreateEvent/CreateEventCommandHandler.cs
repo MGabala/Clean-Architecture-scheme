@@ -12,13 +12,13 @@ using CleanArchitectureDomain.Entities;
 
 using MediatR;
 
-namespace CleanArchitectureApplication.Repositories.Features.Categories.Commands.CreateEvent
+namespace CleanArchitectureApplication.Repositories.Features.Events.Commands.CreateEvent
 {
     public class CreateEventCommandHandler : IRequestHandler<CreateEventCommand, Guid>
     {
         private readonly IEventRepository _eventRepository;
         private readonly IMapper _mapper;
-        public CreateEventCommandHandler(IMapper mapper,IEventRepository eventRepository)
+        public CreateEventCommandHandler(IMapper mapper, IEventRepository eventRepository)
         {
             _mapper = mapper;
             _eventRepository = eventRepository;

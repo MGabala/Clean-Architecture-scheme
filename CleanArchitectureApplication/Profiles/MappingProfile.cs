@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 using AutoMapper;
-
-using CleanArchitectureApplication.Repositories.Features.Categories.Commands.CreateEvent;
 using CleanArchitectureApplication.Repositories.Features.Categories.Queries.GetCategoriesList;
 using CleanArchitectureApplication.Repositories.Features.Categories.Queries.GetCategoriesListWithEvents;
+using CleanArchitectureApplication.Repositories.Features.Events.Commands.CreateEvent;
 using CleanArchitectureApplication.Repositories.Features.Events.GetEventDetail;
 using CleanArchitectureApplication.Repositories.Features.Events.Queries;
 using CleanArchitectureDomain.Entities;
