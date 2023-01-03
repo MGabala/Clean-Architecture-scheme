@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using MediatR;
+
 namespace CleanArchitectureApplication.Repositories.Features.Categories.Queries.GetCategoriesList
 {
-    internal class GetCategoriesListQuery
+    public class GetCategoriesListQuery : IRequest<List<CategoryListVM>>
     {
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CleanArchitectureApplication.Repositories.Features.Categories.Queries.GetCategoriesList
 {
-    internal class CategoryListVM
+    public class CategoryListVM
     {
+        public Guid CategoryId { get; set; }
+        public string Name { get; set; } = string.Empty;
     }
 }
