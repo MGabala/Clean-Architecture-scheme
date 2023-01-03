@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\Features\Categories\Commands\" />
     <Folder Include="Repositories\Features\Events\Commands\CreateEvent\" />
     <Folder Include="Repositories\Features\Orders\Commands\" />
     <Folder Include="Repositories\Features\Orders\Queries\" />

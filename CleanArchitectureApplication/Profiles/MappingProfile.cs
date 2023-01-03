@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using AutoMapper;
 
+using CleanArchitectureApplication.Repositories.Features.Categories.Commands.CreateEvent;
 using CleanArchitectureApplication.Repositories.Features.Categories.Queries.GetCategoriesList;
 using CleanArchitectureApplication.Repositories.Features.Categories.Queries.GetCategoriesListWithEvents;
 using CleanArchitectureApplication.Repositories.Features.Events.GetEventDetail;
@@ -23,6 +24,7 @@ namespace CleanArchitectureApplication.Profiles
             CreateMap<CategoryEntity, CategoryDTO>();
             CreateMap<CategoryEntity, CategoryListVM>();
             CreateMap<CategoryEntity, CategoryEventListVM>();
+            CreateMap<EventEntity, CreateEventCommand>().ReverseMap();
         }
     }
 }
