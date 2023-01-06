@@ -10,6 +10,11 @@ namespace CleanArchitectureContext.Repositories
 {
     public class AsyncRepository<T> : IAsyncRepository<T> where T : class
     {
+        private readonly MainDatabase _dbContext;
+        public AsyncRepository(MainDatabase dbContext)
+        {
+            _dbContext = dbContext;
+        }
         public Task<T> AddAsync(T entity)
         {
             throw new NotImplementedException();
