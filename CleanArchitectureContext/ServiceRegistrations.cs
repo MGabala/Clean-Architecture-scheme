@@ -12,7 +12,7 @@ namespace CleanArchitectureContext
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<MainDatabase>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("MSSQL-ConnectionString")));
+                options.UseSqlServer(configuration.GetConnectionString("DB")));
 
             //generic way of registering repositories
             services.AddScoped(typeof(IAsyncRepository<>), typeof(AsyncRepository<>));
